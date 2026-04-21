@@ -6,7 +6,7 @@
 📧 **Contact:** vaclav.frcek@aiclysm.com
 
 <a href="https://aiclysm.com/">
-  <img src="https://aiclysm.com/img/dashboard-preview.jpg" alt="MyBodyAI Dashboard — 13 health indices, Body Status, biological age" width="820">
+  <img src="https://aiclysm.com/img/dashboard-preview.jpg" alt="MyBodyAI Dashboard — 12 health indices, Body Status, biological age" width="820">
 </a>
 
 > 🇨🇿 Česká verze níže / [Czech version below](#czech-version)
@@ -15,7 +15,7 @@
 
 ## What it does
 
-- **Body Status** — single-verdict daily state from 13 health indices (Alert → Recovery → Steady → Strong → Peak)
+- **Body Status** — single-verdict daily state from 12 health indices (Alert → Recovery → Steady → Strong → Peak)
 - **Illness Risk** — AI prediction based on HRV drift, RHR rise, SpO₂ and respiratory-rate deviations — often days before symptoms appear
 - **Biological Age** — 8-domain composite with age + gender adjustment, capped ±12 years with dampening
 - **Training Readiness** — industry-aligned (Garmin TR / WHOOP Recovery / Oura Readiness)
@@ -67,7 +67,7 @@
 | Analytics | Umami (self-hosted) |
 | Proxy / TLS | Caddy with automatic HTTPS |
 | Infrastructure | Docker Compose, 8 orchestrated containers |
-| Testing | pytest (1200+ tests), Vitest (170+ tests) |
+| Testing | pytest (1200+ tests), Vitest (140+ tests) |
 | Monitoring | Telegram error alerts, structured logging |
 
 ---
@@ -163,9 +163,9 @@ Risk/load metrics (`illness_risk`, `stress_load`, `overtraining`) show **raw** v
 - **15,000** LOC React frontend
 - **65** static HTML pages (website)
 - **81** API routes across 7 Flask blueprints
-- **13** health indices + composite Body Status + Biological Age (8 domains)
+- **12** health indices + composite Body Status + Biological Age (8 domains)
 - **26** achievements, **10** user ranks, **5** Body Status states
-- **1,200+** unit & integration tests (backend), **170+** (frontend)
+- **1,200+** unit & integration tests (backend), **140+** (frontend)
 
 ---
 
@@ -193,7 +193,7 @@ Changelog: https://aiclysm.com/changelog/
 
 ## Co to dělá
 
-- **Body Status** — jeden denní verdikt ze 13 zdravotních indexů (Varování → Regenerace → Stabilní → Silný den → Špičkový den)
+- **Body Status** — jeden denní verdikt ze 12 zdravotních indexů (Varování → Regenerace → Stabilní → Silný den → Špičkový den)
 - **Riziko nemoci** — AI predikce na základě poklesu HRV, růstu klidového tepu, SpO₂ a dechové frekvence — často několik dní před příznaky
 - **Biologický věk** — kompozit z 8 domén s věkovou a genderovou korekcí, omezen ±12 let s tlumením
 - **Tréninková připravenost** — v souladu s průmyslovým standardem (Garmin TR / WHOOP Recovery / Oura Readiness)
@@ -241,7 +241,7 @@ Changelog: https://aiclysm.com/changelog/
 | Analytika | Umami (self-hosted) |
 | Proxy / TLS | Caddy s automatickým HTTPS |
 | Infrastruktura | Docker Compose, 8 orchestrovaných kontejnerů |
-| Testy | pytest (1200+ testů), Vitest (170+ testů) |
+| Testy | pytest (1200+ testů), Vitest (140+ testů) |
 | Monitoring | Telegram error alerty, strukturované logy |
 
 ## Klíčová inženýrská rozhodnutí
@@ -327,9 +327,9 @@ Metriky typu riziko/zátěž (`illness_risk`, `stress_load`, `overtraining`) zob
 - **15 000** LOC React frontend
 - **65** statických HTML stránek (web)
 - **81** API routes napříč 7 Flask blueprinty
-- **13** zdravotních indexů + kompozitní Body Status + Biologický věk (8 domén)
+- **12** zdravotních indexů + kompozitní Body Status + Biologický věk (8 domén)
 - **26** achievementů, **10** uživatelských hodností, **5** stavů Body Status
-- **1 200+** unit a integration testů (backend), **170+** (frontend)
+- **1 200+** unit a integration testů (backend), **140+** (frontend)
 
 ## Stav
 
